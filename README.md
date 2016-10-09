@@ -3,7 +3,7 @@
 [React](http://facebook.github.io/react/) sample component with letters skewed effects.
 
 ## Sample
-Play with on [JSFiddle](http://fiddle.jshell.net/gn3wLx6r/15/show/)
+Play with it on [JSFiddle](http://fiddle.jshell.net/gn3wLx6r/15/show/)
 
 ![Sample](https://raw.githubusercontent.com/bertuz/katanaSample/master/example/sample.png)
 
