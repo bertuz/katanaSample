@@ -3,7 +3,7 @@
 [React](http://facebook.github.io/react/) sample component with letters skewed effects.
 
 ## Sample
-![Alt text](./example/sample.jpg)
+![Alt text](./master/example/sample.png)
 
 
 ## About Belka
