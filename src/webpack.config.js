@@ -4,7 +4,7 @@ var autoprefixer = require('autoprefixer');
 
 var webpack_config = {
     devtool: 'eval',
-    context: path.join(__dirname, '../'),
+    context: __dirname,
     entry: [
         './index'
     ],

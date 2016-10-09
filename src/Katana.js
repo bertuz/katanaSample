@@ -5,14 +5,16 @@ var audio = new Audio('https://drive.google.com/uc?export=download&id=0BwHGMLOUY
 
 export default class Katana extends React.Component {
   get IDPrefix() {
-    return 'SkewedShade';
+    return 'Katana';
   }
 
   componentWillMount() {
-		this.addShadingEffect();
+		this.addEffect();
   }
 
-  addShadingEffect() {
+  addEffect() {
+    // why this: by using content property, if the char is selected, only one
+    // char will be copied
     var css = `.content .cover span::before{content: '${this.props.children}';}`,
         head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style');
@@ -28,18 +30,21 @@ export default class Katana extends React.Component {
     head.appendChild(style);
   }
 
-  componentWillUnmount() {
-    let el = document.getElementsById(`${this.IDprefix}`);
-    el.parentNode.removeChild( el );
-  }
-
-  componentWillUpdate() {
+  removeEffect() {
     let el = document.getElementById(this.IDPrefix);
     el.parentNode.removeChild( el );
   }
 
+  componentWillUnmount() {
+    this.removeEffect();
+  }
+
+  componentWillUpdate() {
+    this.removeEffect();
+  }
+
 	componentDidUpdate() {
-  		this.addShadingEffect();
+  		this.addEffect();
   }
 
   constructor(props) {
