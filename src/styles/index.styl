@@ -1,0 +1,60 @@
+.letterbox
+  font-size 20rem
+  display inline-block
+  position relative
+  text-align left
+
+.content
+  display block
+  position relative
+  color #FFFFFF
+
+@keyframes katanaUp
+  from
+    transform: translateX(0) translateY(0)
+  to
+    transform: translateX(5%) translateY(-5%)
+
+@keyframes katanaDown
+  from
+    transform: skew(48deg) translateX(-25%) translateY(0)
+  to
+    transform: skew(48deg) translateX(-30%) translateY(5%)
+
+.letterbox
+  cursor pointer
+
+  .content .letter
+    display: inline-block
+
+  &:not(:active)
+    .content .letter
+      animation-name katanaUp
+      animation-duration 0.5s
+      animation-direction alternate
+      animation-iteration-count 2
+
+    .cover > span
+      animation-name: katanaDown
+      animation-duration 0.5s
+      animation-direction alternate
+      animation-iteration-count 2
+
+
+  .cover
+    display block
+    position absolute
+    top 0
+    right 0
+    height 100%
+    width 200%
+    transform skew(-48deg) translate(75%)
+    overflow hidden
+    background-color #E12486
+
+    span
+      display block
+
+    >span
+      color #F6B2D5
+      transform skew(48deg) translateX(-25%)
