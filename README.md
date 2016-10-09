@@ -2,6 +2,9 @@
 
 [React](http://facebook.github.io/react/) sample component with letters skewed effects.
 
+## Sample
+![Alt text](./example/sample.jpg)
+
 
 ## About Belka
 ![Alt text](http://s2.postimg.org/rcjk3hf5x/logo_rosso.jpg)
