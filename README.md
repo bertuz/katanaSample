@@ -1,6 +1,6 @@
 # Katana
 
-[React](http://facebook.github.io/react/) sample component with letters skewed effects.
+[React](http://facebook.github.io/react/) sample component with CSS-only letters skewed effects.
 
 ## Sample
 Play with it on my [github.io](http://bertuz.github.io/katana/)
